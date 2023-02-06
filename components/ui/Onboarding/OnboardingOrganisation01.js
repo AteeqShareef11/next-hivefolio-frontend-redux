@@ -55,7 +55,7 @@ const OnboardingOrganisation01 = ({ steps, setSelectedStep, page, setPage }) => 
     const teams = useSelector((state) => state.allData.teams);
     const communities = useSelector((state) => state.allData.communities);
     const games = useSelector((state) => state.allData.games);
-    const typeOrganisations = useSelector((state) => state.allData.typeOrganisations);
+    const typeOrganisations = useSelector((state) => state.allData.typeOrganisations.data);
 
     const [userId, setUserId] = useState({});
     const [teamId, setTeamId] = useState({});
@@ -328,7 +328,7 @@ const OnboardingOrganisation01 = ({ steps, setSelectedStep, page, setPage }) => 
                         <div className="grid grid-row-2 bg-white">
                             <Select
                                 className=""
-                                    getOptionLabel={option => `${option.name}`}
+                                    getOptionLabel={option => `${option.attributes.name}`}
                                     getOptionValue={option => option.id}
                                     options={games}
                                     instanceId="games"
@@ -412,7 +412,7 @@ const OnboardingOrganisation01 = ({ steps, setSelectedStep, page, setPage }) => 
                         <div className="grid grid-row-2 bg-white">
                             <Select
                             className=""
-                            getOptionLabel={option => `${option.name}`}
+                            getOptionLabel={option => `${option.attributes.name}`}
                             getOptionValue={option => option.id}
                             options={typeOrganisations}
                             instanceId="types"
@@ -589,7 +589,7 @@ const OnboardingOrganisation01 = ({ steps, setSelectedStep, page, setPage }) => 
                         <div className="grid grid-row-2 bg-white">
                             <Select
                               className=""
-                                getOptionLabel={option => `${option.name}`}
+                                getOptionLabel={option => `${option.attributes.name}`}
                                 getOptionValue={option => option.id}
                                 options={teams}
                                 instanceId="teams"

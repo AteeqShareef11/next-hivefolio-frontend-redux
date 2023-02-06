@@ -241,6 +241,7 @@ const handleAddUserImage = async (event) => {
     console.log("gamesOnBoardng===>",games)
     console.log("charcters===>", characters)
     console.log("typeusers====>", typeusers)
+    console.log("loggedInUser.games=====>",loggedInUser.games)
 
     /* Add type to user type list */
     const handleAddTypeUser = async (event) => {
