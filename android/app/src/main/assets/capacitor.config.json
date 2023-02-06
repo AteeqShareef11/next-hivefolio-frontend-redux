@@ -1,0 +1,13 @@
+{
+  "appId": "gg.hivefolio",
+  "appName": "hivefolio",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "out",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}

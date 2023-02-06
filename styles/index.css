@@ -1,0 +1,173 @@
+/* @import "./styles/custom.css"; */
+
+/* ./src/index.css */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+
+/* Image */
+
+.clip-svg {
+	width: 0;
+	height: 0;
+	
+  }
+
+.element {
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    -webkit-clip-path: url("#clip-shape"); /* required for Webkit/Blink browsers if you're using only inline SVG clipping paths, but not CSS clip-path */
+	clip-path: url("#clip-shape");
+}
+
+
+.hexagonImageElement {
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    -webkit-clip-path: url("#clip-shape"); /* required for Webkit/Blink browsers if you're using only inline SVG clipping paths, but not CSS clip-path */
+	clip-path: url("#clip-shape");
+}
+
+
+
+@media (max-width: 599px) {
+	.hexagonImage {
+		width: 16vw;
+		height: 16.5vw;
+		margin-left: auto;
+		margin-right: auto;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 1007px) {
+	.hexagonImage {
+		width: 18vw;
+		height: 18.5vw;
+		margin-left: auto;
+		margin-right: auto;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
+@media (min-width: 1008px) { 
+	.hexagonImage {
+		width: 8vw;
+		height: 8.5vw;
+		margin-left: auto;
+		margin-right: auto;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
+.clip-svg {
+	width: 90%;
+
+}
+
+
+/* Breakpoints */
+
+/* @media (min-width: 1008px) {
+
+  .max-width {
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+
+} */
+
+
+/* Text Styles*/
+
+/* Heading Large */
+@media (min-width: 600px) {
+	h1 {
+		font-size: 5em;
+		line-height: 100%;
+		margin-bottom: 0.5em;
+	}
+	
+	h2 {
+		font-size: 4.5em;
+		line-height: 100%;
+		margin-bottom: 1em;
+	}
+	
+	h3 {
+		font-size: 2.625em;
+		line-height: 120%;
+		margin-bottom: 1em;
+	}
+	
+	h4 {
+		font-size: 2em;
+		line-height: 120%;
+		margin-bottom: 1em;
+	}
+	
+	h5 {
+		font-size: 1em;
+		line-height: 120%;
+		margin-bottom: 1em;
+	}	
+
+	h6 {
+		font-size: 1em;
+		line-height: 120%;
+		margin-bottom: 1em;
+	}	
+}
+
+
+/* Heading Small */
+@media (max-width: 599px) {
+	h1 {
+		font-size: 2.4em;
+		line-height: 100%;
+		margin-top: 0px;
+		margin-bottom: 0.5px;
+	}
+
+	h2 {
+		font-size: 2em;
+		line-height: 100%;
+		margin-bottom: 0.5;
+	}
+
+
+	h3 {
+		font-size: 1.5em;
+		line-height: 120%;
+		margin-bottom: 1em;
+	}
+
+	h4 {
+		font-size: 1.5em;
+		line-height: 120%;
+		margin-bottom: 1em;
+	}
+
+	h5 {
+		font-size: 1em;
+		line-height: 140%;
+		margin-bottom: 1em;
+	}
+
+	h6 {
+		font-size: 1em;
+		line-height: 140%;
+		margin-bottom: 1em;
+	}
+
+}
+
+.max-width {
+	max-width: 1200px;
+	margin: auto;
+  }
