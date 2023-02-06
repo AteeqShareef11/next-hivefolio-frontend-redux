@@ -53,7 +53,7 @@ const OnboardingOrganisation01 = ({ steps, setSelectedStep, page, setPage }) => 
     const loggedInUser = useSelector(state => state.user);
     const users = useSelector((state) => state.allData.users);
     const teams = useSelector((state) => state.allData.teams);
-    const communities = useSelector((state) => state.allData.communities);
+    const communities = useSelector((state) => state.allData.communities.data);
     const games = useSelector((state) => state.allData.games);
     const typeOrganisations = useSelector((state) => state.allData.typeOrganisations.data);
 
@@ -681,7 +681,7 @@ const OnboardingOrganisation01 = ({ steps, setSelectedStep, page, setPage }) => 
                         <div className="grid grid-row-2 bg-white">
                             <Select
                               className=""
-                                getOptionLabel={option => `${option.name}`}
+                                getOptionLabel={option => `${option.attributes.name}`}
                                 getOptionValue={option => option.id}
                                 options={communities}
                                 instanceId="communities"
